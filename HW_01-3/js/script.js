@@ -10,12 +10,12 @@
 
 
 // #2
-// let nameOurPlanet = Earth;
-// let presentUserName = 'Natasha';
+// const nameOurPlanet = Earth;
+// const presentUserName = 'Natasha';
 
 
 
 // #3
-let number = '10' + 10;
+const number = '10' + 10;
 console.log(number);
 console.log(typeof number);
