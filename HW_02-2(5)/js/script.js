@@ -7,7 +7,7 @@
 // Измените значение свойства name на Pete.
 // Удалите свойство name из объекта.
 
-// let user = {};
+// const user = {};
 // user.name = 'John';
 // user.surname = 'Smith';
 
@@ -36,12 +36,12 @@ console.log(user);
 // Напишите код для суммирования всех зарплат и сохраните 
 // результат в переменной sum
 
-let salaries = {
+const salaries = {
     John: 100,
     Ann: 160,
     Pete: 130 
 }
 console.log(salaries);
 
-let sum = (salaries.John + salaries.Ann + salaries.Pete);
+const sum = (salaries.John + salaries.Ann + salaries.Pete);
 console.log('Sum of all salaries = ' + sum);
