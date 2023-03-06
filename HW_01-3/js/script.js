@@ -10,7 +10,7 @@
 
 
 // #2
-// const nameOurPlanet = Earth;
+// const nameOurPlanet = 'Earth';
 // const presentUserName = 'Natasha';
 
 
