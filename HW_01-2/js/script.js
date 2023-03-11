@@ -39,9 +39,3 @@ function showDivi() {
     alert('Ділення чисел буде = ' + (g / h) );
 }
 showDivi();
-
-
-
-
-
-
