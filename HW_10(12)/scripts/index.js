@@ -3,20 +3,20 @@
 const age = +prompt('Введіть свій рік народження', '1990');
 const yearsOld = 2023 - age;
 
-let capital = ' Ви проживаєте в столиці';
-let otherCity = ' Ви прожваєте в місті ';
-let countryU = ' України';
-let countryP = ' Польщі';
-let countryS = ' Словакії';
-let sportChess = '. Крутий вид спорту! Хочете стати Карлсеном?';
-let sportСycling = '. Крутий вид спорту! Хочете стати Гончаром?';
-let sportRun = '. Крутий вид спорту! Хочете стати Кіп"єґоном?';
+const capital = ' Ви проживаєте в столиці';
+const otherCity = ' Ви прожваєте в місті ';
+const countryU = ' України';
+const countryP = ' Польщі';
+const countryS = ' Словакії';
+const sportChess = '. Крутий вид спорту! Хочете стати Карлсеном?';
+const sportСycling = '. Крутий вид спорту! Хочете стати Гончаром?';
+const sportRun = '. Крутий вид спорту! Хочете стати Кіп"єґоном?';
 const otherSport = ' - це крутий вид спорту!'
 
 if (age !== 0) {
-let city = prompt('В якому місті ви живете?', 'Київ');
+const city = prompt('В якому місті ви живете?', 'Київ');
     if (city !== null) {
-        let kindOfSport = prompt('Напишіть свій улюблений вид спорту', 'Шахи');
+        const kindOfSport = prompt('Напишіть свій улюблений вид спорту', 'Шахи');
             if (kindOfSport === 'Шахи') {
                 if (city === 'Київ' || city === 'Варшава' || city === 'Братислава') {
                         if (city === 'Київ') {
