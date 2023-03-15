@@ -30,9 +30,9 @@
 
 // #4
 
-const firsrN = prompt('Ввеліть перше число');
-const secondN = prompt('Ввеліть друге число');
-const thirdN = prompt('Ввеліть третє число');
+const firsrN = prompt('Введіть перше число');
+const secondN = prompt('Введіть друге число');
+const thirdN = prompt('Введіть третє число');
 
 if ((firsrN === null) || (secondN === null) || (thirdN === null)) {
     alert('Числа введені невірно');
