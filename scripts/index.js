@@ -1,29 +1,27 @@
 'use strict';
 
-const str = 'charisma';
-const num = 9;
-const simb = '*';
-const boo = false;
+const word = 'charisma'
+const num = 11
+const symb = '*'
+const bool = false
 
-function padString (str, num, simb, boo = true) {
-    if (typeof str !== 'string') throw new Error ('some error in str');
-    if (typeof num !== 'number' || Number.isNaN(num) || !isFinite(num)) {
-    throw new Error ('some error in num');
+function padString (str, num, symb, right = true) {
+    if(typeof str !== 'string') throw new Error('some error in str');
+    if(typeof num !== 'number' || Number.isNaN(num) || !isFinite(num) ) {
+        throw new Error('some error in num');
+    }
+
+    if(str.length === num) return str;
+    if(str.length > num) return str.substring(0, num);
+
+
+    if(typeof symb !== 'string' || symb.length !== 1) throw new Error('some error in symb');
+    if(typeof right !== 'boolean')  throw new Error('some error in right');
+
+    const symbols = symb.repeat(num - str.length);
+    return right ? str + symbols : symbols + str
 }
 
-if (str.length === num) return str;
-if (str.length > num) return str.substring(0, length);
-
-    if (typeof simb !== 'string' || simb.length !== 1) return 'some error in simb';
-    if (typeof boo !== 'boolean') throw new Error ('some error in boo');
-
-    const symbols = simb.repeat(num - str.length);
-    return !right ? symbols + str : str + symbols
-
-
-
-}
-
-console.log(padString(str, num, simb, boo));
-
-
+console.log(padString('hello', 8, '*', true));
+console.log(padString('hello', 6, '*', false));
+console.log(padString('hello', 2));
