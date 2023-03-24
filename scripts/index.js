@@ -1,14 +1,13 @@
 'use strict';
 
-const arr = [1, 2, 3, -1, -2, -3];
-
-function newArr(array) {
-    if(!Array.isArray(array)) return null;
-    const exampleArr = [];
-    for (let a = 0; a < array.length; a++ ) {
-        if (array[a] > 0) exampleArr.push(array[a]);
-    }
-    if (!exampleArr.length) return null;
-    return exampleArr;
+function fib(n = 1) {
+let a = 1;
+let b = 1;
+for (let i = 3; i <= n; i++) {
+    let c = a + b;
+    a = b;
+    b = c;
 }
-console.log(newArr(arr));
+return b;
+}
+console.log(fib(102));
